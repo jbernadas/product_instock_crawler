@@ -12,7 +12,8 @@ headers = {
 def get_product_results_data(soup):
     ## TODO CREATE A FUNCTION THAT LOOKS FOR A SPECIFIC ITEM IN THE soup
     ## THEN RETURNS IF IT IS IN STOCK OR NOT.
-
+    print('Hello!')
+    
 for j in search(query, num_results=int(how_many_search_results)):
     response = requests.get(j, headers=headers)
     soup = BeautifulSoup(response.text, 'lxml')
